@@ -1,4 +1,5 @@
 import Socials from "@/components/Socials";
+import Photo from "@/components/Photo";
 import { Button } from "@/components/ui/button";
 import { FiDownload } from "react-icons/fi";
 
@@ -6,11 +7,11 @@ import { FiDownload } from "react-icons/fi";
 export default function Home() {
   return (
     <section className="h-full">
-      <div className="container mx-auto h-full px-5 md:px-8">
-        <div className="flex flex-col justify-between items-center md:flex-row md:pt-8 md:pb-24">
+      <div className="container mx-auto h-full px-5 xl:px-8">
+        <div className="flex flex-col justify-between items-center xl:flex-row xl:pt-8 xl:pb-24">
 
           {/* left part of my hero */}
-          <div className="text-center md:text-left">
+          <div className="text-center md:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
 
             <h1 className="h1 mb-6">
@@ -37,7 +38,9 @@ export default function Home() {
           </div>
 
           {/* right part of my hero */}
-          <div>Photo</div>
+          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+            <Photo />
+          </div>
         </div>
       </div>
     </section>
