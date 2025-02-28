@@ -51,7 +51,7 @@ export default function MobileNav() {
                 <nav className="flex flex-col justify-center items-center gap-8">
                     {links.map((link, index) => {
                         return (
-                            <Link href={link.path} key={index}>
+                            <Link href={link.path} key={index} className={`${link.path === pathname && "text-blue-500 border-b-2 border-blue-500"} text-xl hover:text-blue-500 transition-all`}>
                                 {link.name}
                             </Link>
                         )
