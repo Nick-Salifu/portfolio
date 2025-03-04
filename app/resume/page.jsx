@@ -126,7 +126,6 @@ const skills = {
 }
 
 
-
 export default function Resume() {
     return (
         <motion.div 
@@ -136,12 +135,18 @@ export default function Resume() {
         >
             <div className="container mx-auto">
                 <Tabs defaultValue="experience" className="flex flex-col xl:flex-row gap-[60px]">
-                    <TabsList>
-                        <TabsTrigger>Experience</TabsTrigger>
-                        <TabsTrigger>Education</TabsTrigger>
-                        <TabsTrigger>Skills</TabsTrigger>
-                        <TabsTrigger>About me</TabsTrigger>
+                    <TabsList className="flex flex-col gap-6 w-full max-w-[380px] mx-auto xl:mx-0">
+                        <TabsTrigger value="experience">Experience</TabsTrigger>
+                        <TabsTrigger value="education">Education</TabsTrigger>
+                        <TabsTrigger value="skills">Skills</TabsTrigger>
+                        <TabsTrigger value="about me">About me</TabsTrigger>
                     </TabsList>
+
+                    <div className="min-w-[70vh] w-full">
+                        <TabsContent value="experience" className="w-full">
+                            experience
+                        </TabsContent>
+                    </div>
                 </Tabs>
             </div>
         </motion.div>
