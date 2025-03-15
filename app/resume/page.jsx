@@ -49,7 +49,7 @@ const about = {
 const experience = {
     icon: "",
     title: "My experience",
-    description: "Lorem ipsum dolor. Eaque nostrum enim magni non. Sequi, vero.",
+    description: "Lorem ipsum dolor. Eaque nostrum enim magni non. Sequi, vero enim magni non. Sequi, vero enim magni non. Sequi, vero.",
     items: [
         {
             company: "IT Dynamics Limited",
@@ -86,10 +86,6 @@ const skills = {
     title: "My skills",
     description: "Lorem ipsum dolor. Eaque nostrum enim magni non. Sequi, vero.",
     skillsList: [
-        {
-            icon: <FaHtml5 />,
-            name: "html 5"
-        },
         {
             icon: <FaHtml5 />,
             name: "html 5"
@@ -144,7 +140,39 @@ export default function Resume() {
 
                     <div className="min-w-[70vh] w-full">
                         <TabsContent value="experience" className="w-full">
-                            experience
+                            <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                                <h3 className="text-4xl font-bold">{experience.title}</h3>
+                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
+
+                                <ScrollArea className="h-[400px]">
+                                    <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                                        {experience.items.map((item, index) => {
+                                            return (
+                                                <li key={index}>
+                                                    <span>{item.duration}</span>
+                                                    <h3>{item.position}</h3>
+                                                    <div>
+                                                        <span></span>
+                                                        <p>{item.company}</p>
+                                                    </div>
+                                                </li>
+                                            )
+                                        })}
+                                    </ul>
+                                </ScrollArea>
+                            </div>
+                        </TabsContent>
+
+                        <TabsContent value="education" className="w-full">
+                            education
+                        </TabsContent>
+
+                        <TabsContent value="skills" className="w-full">
+                            skills
+                        </TabsContent>
+
+                        <TabsContent value="about" className="w-full">
+                            about
                         </TabsContent>
                     </div>
                 </Tabs>
