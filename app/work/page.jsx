@@ -136,7 +136,7 @@ export default function Work() {
                                 containerStyles="flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] xl:bottom-0 z-20 w-full justify-between xl:w-max xl:justify-none"
                                 btnStyles="bg-blue-500 hover:bg-blue-600 text-[#1c1c23] text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all"
                             />
-                        </Swiper>
+                        </Swiper> 
                     </div>
                 </div>
             </div>
