@@ -25,7 +25,7 @@ export default function Stats() {
     return (
         <section className="pt-4 pb-12 xl:pt-0 xl:pb-0">
             <div className="container mx-auto">
-                <div className="flex flex-wrap gap-6 mx-auto max-w-[80vw] xl:max-w-none">
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 mx-auto max-w-[80vw] xl:max-w-none">
                     {stats.map((item, index) => {
                         return (
                             <div key={index} className="flex-1 items-center flex gap-4 justify-center xl:justify-start">

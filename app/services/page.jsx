@@ -53,7 +53,7 @@ export default function Services() {
                                 <div className="w-full flex justify-between items-center">
                                     <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-blue-500 transition-all duration-500">{service.num}
                                     </div>
-                                    <Link href={service.href} className="w-[60px] h-[60px] bg-white rounded-full group-hover:bg-blue-500 transition-all duration-500 flex items-center justify-center hover:-rotate-45">
+                                    <Link href={service.href} className="w-[50px] h-[50px] bg-white rounded-full group-hover:bg-blue-500 transition-all duration-500 flex items-center justify-center hover:-rotate-45">
                                         <BsArrowDownRight className="text-[#1c1c22] text-3xl" />
                                     </Link>
                                 </div>
