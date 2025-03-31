@@ -39,7 +39,7 @@ export default function Contact() {
             <div className="container p-4 mx-auto">
                 <div className="flex flex-col xl:flex-row gap-[30px]">
                     <div className="xl:w-[54%] order xl:order-none">
-                        <form className="flex flex-col gap-6 p-10 bg-[#27272c] rounded-xl">
+                        <form className="flex flex-col gap-6 p-6 md:p-10 bg-[#27272c] rounded-xl">
                             <h3 className="text-4xl text-blue-500">Let's work together</h3>
                             <p className="text-white/60">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor veritatis dignissimos nesciunt itaque maxime?</p>
 
