@@ -178,7 +178,7 @@ export default function Resume() {
                         <TabsTrigger value="about">About me</TabsTrigger>
                     </TabsList>
 
-                    <div className="min-w-[70vh] w-full">
+                    <div className="min-h-[70vh] w-full">
                         {/* Experience */}
                         <TabsContent value="experience" className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
