@@ -49,7 +49,7 @@ const about = {
 const experience = {
     icon: "../badge.jpg",
     title: "My experience",
-    description: "Lorem ipsum dolor. Eaque nostrum enim magni non. Sequi, vero enim magni non. Sequi, vero enim magni non. Sequi, vero.",
+    description: "Over the years, I've worked on various projects turning UI/UX designs into clean, functional interfaces, collaborating with cross-functional teams, and ensuring optimal performance across devices. Here are some of the organizations I have worked for",
     items: [
         {
             company: "IT Dynamics Limited",
@@ -87,7 +87,7 @@ const experience = {
 const education = {
     icon: "../hat.png",
     title: "My education",
-    description: "Lorem ipsum dolor. Eaque nostrum enim magni non. Sequi, vero.",
+    description: "I hold a B.Sc in Information and Communication Science from the university of Ilorin, where I built a strong foundation in IT systems and software engineering. I have also obtained certifications from online learning platforms on software engineering. Here are my educational qualifications ",
     items: [
         {
             institution: "University of Ilorin, Nigeria",
@@ -183,7 +183,7 @@ export default function Resume() {
                         <TabsContent value="experience" className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                 <h3 className="text-4xl font-bold">{experience.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
+                                <p className="max-w-[650px] text-white/60 mx-auto xl:mx-0">{experience.description}</p>
 
                                 <ScrollArea className="h-[400px]">
                                      <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
@@ -208,7 +208,7 @@ export default function Resume() {
                         <TabsContent value="education" className="w-full">
                             <div className="flex flex-col gap-[30px] text-center xl:text-left">
                                 <h3 className="text-4xl font-bold">{education.title}</h3>
-                                <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
+                                <p className="max-w-[650px] text-white/60 mx-auto xl:mx-0">{education.description}</p>
 
                                 <ScrollArea className="h-[400px]">
                                     <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
